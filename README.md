@@ -9,18 +9,17 @@ Sensitive.js has to run on a computer that has an Arduino attached to a USB port
 When you access the node.js server from your phone, a Sensitive.js client opens a Websocket connection and starts sending the sensor readings. The node app then forwards them to your Arduino, using the serial port.
 
 ### Get it running
-1. Get the sources
+1. Get the sources and dependences
+
 ```
 git clone git@github.com:alanreid/Sensitive.js.git 
-
 cd Sensitive.js
-
 npm install
-
 ```
+
 2. Open app.js and change the serial port to the one your Arduino is using
 3. Upload the demo sketch to your Arduino
-4. Run the app
+4. Run the app with 
 ```
 node app.js
 ```
