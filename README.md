@@ -2,11 +2,24 @@ Sensitive.js
 ============
 
 Sensitive.js is a small Node.js app that reads sensor data from your mobile phone and sends it to an Arduino.
-Note: The Arduino part is still quite buggy, but it works :)
+It's still quite buggy, but it works :)
 
 ### How it works
 Sensitive.js has to run on a computer that has an Arduino attached to a USB port (this could be a RaspberryPi for instance).
+
 When you access the node.js server from your phone, a Sensitive.js client opens a Websocket connection and starts sending the sensor readings. The node app then forwards them to your Arduino, using the serial port.
+
+### Supported Sensors
+* Geolocation (lat, lng)
+* Accelerometer (x, y, z)
+* Orientation (alpha, beta, gamma)
+* Compass (degrees, direction)
+
+### Demo app
+The demo app is quite simple. It's a two part app that allows you to start and stop reading sensors. 
+The first part is an HTML file and the other is an Arduino sketch. 
+
+Note that the demo sketch needs a Liquied Crystal display to show the data. This is of course not required for Sensitive.js, but you will have to strip the code a bit to run it without the display.
 
 ### Get it running
 1. Get the sources and dependences
@@ -23,7 +36,7 @@ npm install
 ```
 node app.js
 ```
-5. Access to your machine's IP from your mobile device.
+5. Access to your node's IP & port from your mobile device.
 
 ### Contact me
 Contact me on Twitter: [@alan_reid](http://twitter.com/alan_reid)
