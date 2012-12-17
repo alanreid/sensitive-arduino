@@ -1,5 +1,5 @@
 {
-  "name": "Sensitive",
+  "name": "sensitive",
   "description": "A Node.js app that reads the sensors of a mobile phone and sends the data to an Arduino via serial port.",
   "version": "0.1.0",
   "author": {
