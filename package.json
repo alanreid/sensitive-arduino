@@ -1,0 +1,32 @@
+{
+  "name": "Sensitive",
+  "description": "A Node.js app that reads the sensors of a mobile phone and sends the data to an Arduino via serial port.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Alan Reid",
+    "email": "mail@alanreid.com.ar"
+  },
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3.0.4",
+    "serialport": "1.0.8",
+    "socket.io": "0.9.13"
+  },
+  "keywords": [
+    "sensitive",
+    "senstive.js",
+    "iphone",
+    "android",
+    "arduino",
+    "sensor",
+    "accelerometer",
+    "compass",
+    "geolocation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alanreid/Sensitive.js"
+  },
+}

@@ -1,0 +1,45 @@
+<style>
+button { width:100%; height:300px; font-size:400% }
+</style>
+
+<p><button id="location" onclick="watch(this)">Watch location</button></p>
+<p><button id="motion" onclick="watch(this)">Watch motion</button></p>
+<p><button id="orientation" onclick="watch(this)">Watch orientation</button></p>
+<p><button id="compass" onclick="watch(this)">Watch compass</button></p>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/sensitive.js"></script>
+
+<script>
+
+Sensitive.init({ 
+	addr: window.location.hostname, // Node server
+	sensors: ['location', 'motion', 'orientation', 'compass'] // Enabled sensors
+});
+
+
+var running = [];
+
+function watch(e) {
+	var sensor = e.getAttribute('id');
+
+	var inx = -1;
+	for(var i in running) {
+		if(running[i] == sensor) {
+			inx = i;
+		}
+	}
+
+	if(inx != -1) {
+		running.splice(inx, 1);
+		Sensitive.stop(sensor);
+		e.innerHTML = 'Watch ' + sensor;
+	} else {
+		running.push(sensor);
+		Sensitive.watch(sensor);
+		e.innerHTML = 'Stop ' + sensor;
+	}
+	
+};
+
+</script>
