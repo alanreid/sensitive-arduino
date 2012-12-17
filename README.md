@@ -26,7 +26,7 @@ node app.js
 5. Access to your machine's IP from your mobile device.
 
 ### Contact me
-Twitter: ([@alan_reid](http://twitter.com/alan_reid))
+Contact me on Twitter: [@alan_reid](http://twitter.com/alan_reid)
 
 ### License
 This software is distributed under the Apache 2.0 License: http://www.apache.org/licenses/LICENSE-2.0
