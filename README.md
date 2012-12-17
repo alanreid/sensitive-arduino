@@ -12,8 +12,11 @@ When you access the node.js server from your phone, a Sensitive.js client opens 
 1. Get the sources
 ```
 git clone git@github.com:alanreid/Sensitive.js.git 
+
 cd Sensitive.js
+
 npm install
+
 ```
 2. Open app.js and change the serial port to the one your Arduino is using
 3. Upload the demo sketch to your Arduino
