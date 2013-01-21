@@ -19,7 +19,7 @@ When you access the node.js server from your phone, a Sensitive.js client opens 
 The demo app is quite simple. It's a two part app that allows you to start and stop reading sensors. 
 The first part is an HTML file and the other is an Arduino sketch. 
 
-Note that the demo sketch needs a Liquied Crystal display to show the data. This is of course not required for Sensitive.js, but you will have to strip the code a bit to run it without the display.
+Note that the demo sketch needs a Liquid Crystal display to show the data. This is of course not required for Sensitive.js, but you will have to strip the code a bit to run it without the display.
 
 ### Get it running
 1. Get the sources and dependences
