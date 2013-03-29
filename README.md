@@ -1,13 +1,13 @@
-Sensitive.js
+Sensitive Arduino
 ============
 
-Sensitive.js is a small Node.js app that reads sensor data from your mobile phone and sends it to an Arduino.
+Sensitive Arduino is a small Node.js app that reads sensor data from your mobile phone and sends it to an Arduino.
 It's still quite buggy, but it works :)
 
 ### How it works
-Sensitive.js has to run on a computer that has an Arduino attached to a USB port (this could be a RaspberryPi for instance).
+Sensitive Arduino has to run on a computer that has an Arduino attached to a USB port (this could be a RaspberryPi for instance).
 
-When you access the node.js server from your phone, a Sensitive.js client opens a Websocket connection and starts sending the sensor readings. The node app then forwards them to your Arduino, using the serial port.
+When you access the node.js server from your phone, a Sensitive Arduino client opens a Websocket connection and starts sending the sensor readings. The node app then forwards them to your Arduino, using the serial port.
 
 ### Supported Sensors
 * Geolocation (lat, lng)
@@ -19,14 +19,14 @@ When you access the node.js server from your phone, a Sensitive.js client opens 
 The demo app is quite simple. It's a two part app that allows you to start and stop reading sensors. 
 The first part is an HTML file and the other is an Arduino sketch. 
 
-Note that the demo sketch needs a Liquid Crystal display to show the data. This is of course not required for Sensitive.js, but you will have to strip the code a bit to run it without the display.
+Note that the demo sketch needs a Liquid Crystal display to show the data. This is of course not required for Sensitive Arduno, but you will have to strip the code a bit to run it without the display.
 
 ### Get it running
 1. Get the sources and dependences
 
 ```
-git clone git@github.com:alanreid/Sensitive.js.git 
-cd Sensitive.js
+git clone git@github.com:alanreid/Sensitive-Arduino.git 
+cd Sensitive-Arduino
 npm install
 ```
 
