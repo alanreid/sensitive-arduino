@@ -1,5 +1,5 @@
 {
-  "name": "sensitive",
+  "name": "sensitive-arduino",
   "description": "A Node.js app that reads the sensors of a mobile phone and sends the data to an Arduino via serial port.",
   "version": "0.1.0",
   "author": {
@@ -27,6 +27,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/alanreid/Sensitive.js"
+    "url": "git://github.com/alanreid/Sensitive-Arduino.js"
   }
 }
